@@ -15,6 +15,8 @@ jobs:
 
     - name: Set up LaTeX environment
       uses: xu-cheng/latex-action@v2
+      with:
+        root_file: Overleaf_CV/resume.tex
     
     - name: Compile LaTeX document
       run: |
