@@ -30,8 +30,10 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git pull --rebase
         git add Overleaf_CV/PDFs/resume.pdf
         git commit -m 'Regenerate PDF from resume.tex'
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
