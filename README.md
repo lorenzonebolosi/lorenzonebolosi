@@ -17,3 +17,5 @@ With a background in Machine Learning and Neural Networks, I’m especially inte
 ### 🌄 Outside of Tech
 When I'm not coding, you'll find me in the mountains—whether it’s climbing, cycling, or skiing. I’m always up for a new adventure in the outdoors!
 
+#### Full CV
+You can find my full CV [here](https://github.com/lorenzonebolosi/lorenzonebolosi/blob/main/Overleaf_CV/PDFs/Awesome_CV.pdf)
