@@ -20,7 +20,8 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        latexmk -pdf Overleaf_CV/resume.tex -output-directory=Overleaf_CV/PDFs
+        cd Overleaf_CV
+        latexmk -pdf resume.tex -output-directory=PDFs
     
     - name: Commit and push changes
       run: |
