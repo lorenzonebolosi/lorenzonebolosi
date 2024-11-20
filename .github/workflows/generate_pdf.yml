@@ -18,10 +18,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y texlive-full latexmk
 
+    - name: Check latexmk version
+      run: latexmk --version
+
     - name: Compile LaTeX document
       run: |
         cd Overleaf_CV
-        latexmk -pdf resume.tex -output-directory=PDFs
+        latexmk -xelatex resume.tex -output-directory=PDFs
     
     - name: Commit and push changes
       run: |
