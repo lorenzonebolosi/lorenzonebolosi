@@ -17,18 +17,11 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y texlive-full latexmk
-        
-    - name: Set up LaTeX environment
-      uses: xu-cheng/latex-action@v2
-      with:
-        root_file: resume.tex
-        working_directory: Overleaf_CV
-        compiler: xelatex
-    
+
     - name: Compile LaTeX document
       run: |
         latexmk -pdf Overleaf_CV/resume.tex -output-directory=Overleaf_CV/PDFs
-
+    
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
